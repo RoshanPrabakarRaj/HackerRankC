@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,k,q,i,m;
+    int a[n];
+    scanf("%d %d %d",&n,&k,&q);
+    for(i=0;i<n;i++){
+    scanf("%d",&a[(i+k)%n]);
+    }
+    
+    for(i = 0; i < q; i++)
+    {
+    scanf("%d",&m);
+    printf("%d\n",a[m]);
+    }
+    
+    
+  
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+   
+}
